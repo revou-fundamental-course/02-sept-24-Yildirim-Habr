@@ -34,10 +34,19 @@
     flex-direction: column;
 }
 
-.luas-segitiga-img {
+.segitiga-img {
     height: 300px;
     width: 500px;
     background-image: url(https://cilacapklik.com/wp-content/uploads/2020/09/Rumus-Luas-Dan-Keliling-Segitiga.png);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+.luas-jajar-genjang-img {
+    height: 300px;
+    width: 500px;
+    background-image: url(https://pulpent.com/wp-content/uploads/2021/08/Rumus-Jajar-Genjang.jpg);
     background-size: cover;
     background-position: center;
     align-self: center;
@@ -58,10 +67,26 @@
     width: 65%;
 }
 
-.main-content {
+.segitiga-main-content {
     display: flex;
 }
 
-.main-content>aside {
+.segitiga-main-content>aside {
     flex: 1;
+}
+
+.jajar-genjang-main-content {
+    display: none;
+}
+
+.jajar-genjang-main-content>aside {
+    flex: 1;
+}
+
+.box-hasil{
+    height: 10px;
+    width: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: inline;
 }

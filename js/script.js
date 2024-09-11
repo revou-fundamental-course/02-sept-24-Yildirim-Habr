@@ -1,32 +1,61 @@
 function hitungLuasSegitiga() {
-    var a = parseFloat(document.getElementById("alas-segitiga").value);
-    var t = parseFloat(document.getElementById("tinggi-segitiga").value);
-    
-    document.getElementById("luas-segitiga").textContent = 0.5 * a * t;
+    let input1 = document.getElementById("alas-segitiga").value;
+    let input2 = document.getElementById("tinggi-segitiga").value;
+
+    if (input1 == '' || input1 < 0 || input1 > 9 || input2 == '' || input2 < 0 || input2 > 9) {
+        alert('Tolong inputnya diisi dengan benar. :D');
+    }
+    else {
+        let a = parseFloat(input1);
+        let t = parseFloat(input2);
+        document.getElementById("luas-segitiga").textContent = 0.5 * a * t;
+    }
 
 }
 
 function hitungKelilingSegitiga() {
-    var sisi1 = parseFloat(document.getElementById("sisi1").value);
-    var sisi2 = parseFloat(document.getElementById("sisi2").value);
-    var sisi3 = parseFloat(document.getElementById("sisi3").value);
-    
-    document.getElementById("keliling-segitiga").textContent = sisi1 + sisi2 + sisi3;
+    let input1 = document.getElementById("sisi1").value
+    let input2 = document.getElementById("sisi2").value
+    let input3 = document.getElementById("sisi3").value
+
+    if (input1 == '' || input1 < 0 || input1 > 9 || input2 == '' || input2 < 0 || input2 > 9 || input3 == '' || input3 < 0 || input3 > 9) {
+        alert('Tolong inputnya diisi dengan benar. :D');
+    }
+    else {
+        let sisi1 = parseFloat(input1);
+        let sisi2 = parseFloat(input2);
+        let sisi3 = parseFloat(input3);
+        document.getElementById("keliling-segitiga").textContent = sisi1 + sisi2 + sisi3;
+    }
 
 }
 
 function hitungLuasJajarGenjang() {
-    var a = parseFloat(document.getElementById("alas-jajar-genjang").value);
-    var t = parseFloat(document.getElementById("tinggi-jajar-genjang").value);
+    let input1 = document.getElementById("alas-jajar-genjang").value;
+    let input2 = document.getElementById("tinggi-jajar-genjang").value;
     
-    document.getElementById("luas-jajar-genjang").textContent = a * t;
+    if (input1 == '' || input1 < 0 || input1 > 9 || input2 == '' || input2 < 0 || input2 > 9) {
+        alert('Tolong inputnya diisi dengan benar. :D');
+    }
+    else {
+        let a = parseFloat(input1);
+        let t = parseFloat(input2);        
+        document.getElementById("luas-jajar-genjang").textContent = a * t;
+    }
 }
 
 function hitungKelilingJajarGenjang() {
-    var a = parseFloat(document.getElementById("alas-jajar-genjang-keliling").value);
-    var b = parseFloat(document.getElementById("sisi-miring-jajar-genjang").value);
+    let input1 = document.getElementById("alas-jajar-genjang-keliling").value;
+    let input2 = document.getElementById("sisi-miring-jajar-genjang").value;
     
-    document.getElementById("keliling-jajar-genjang").textContent = 2 * (a + b);
+    if (input1 == '' || input1 < 0 || input1 > 9 || input2 == '' || input2 < 0 || input2 > 9) {
+        alert('Tolong inputnya diisi dengan benar. :D');
+    }
+    else {
+        let a = parseFloat(input1);
+        let b = parseFloat(input2);
+        document.getElementById("keliling-jajar-genjang").textContent = 2 * (a + b);    
+    }
 }
 
 function pilihSegitiga() {

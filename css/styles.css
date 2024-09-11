@@ -33,6 +33,7 @@
 .luas-segitiga-content {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .segitiga-img {
@@ -92,4 +93,13 @@
     padding: 5px;
     margin-bottom: 5px;
     display: inline;
+}
+
+@media only screen and (max-width: 480px) {
+    .segitiga-main-content {
+        flex-direction: column;
+    }
+    .jajar-genjang-main-content {
+        flex-direction: column;
+    }
 }
